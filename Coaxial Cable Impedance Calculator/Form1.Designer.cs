@@ -64,7 +64,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 31);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 5;
             this.label1.Text = "(Di) قطر درونی کابل کواکسیال : ";
             // 
             // label2
@@ -75,7 +75,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(226, 31);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 7;
             this.label2.Text = "(Do) قطر بیرونی کابل کواکسیال : ";
             this.label2.UseMnemonic = false;
             // 
@@ -116,7 +116,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.unit_id.Margin = new System.Windows.Forms.Padding(4);
             this.unit_id.Name = "unit_id";
             this.unit_id.Size = new System.Drawing.Size(132, 39);
-            this.unit_id.TabIndex = 5;
+            this.unit_id.TabIndex = 4;
             this.unit_id.Text = "میلیمتر";
             // 
             // kind_cont
@@ -132,7 +132,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.kind_cont.Margin = new System.Windows.Forms.Padding(4);
             this.kind_cont.Name = "kind_cont";
             this.kind_cont.Size = new System.Drawing.Size(132, 28);
-            this.kind_cont.TabIndex = 5;
+            this.kind_cont.TabIndex = 6;
             this.kind_cont.Text = "ثابت دی الکتریک";
             // 
             // calculate
@@ -144,7 +144,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.calculate.Margin = new System.Windows.Forms.Padding(4);
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(137, 77);
-            this.calculate.TabIndex = 7;
+            this.calculate.TabIndex = 3;
             this.calculate.Text = "محاسبه کن  :)";
             this.calculate.UseVisualStyleBackColor = false;
             this.calculate.Click += new System.EventHandler(this.calculate_Click);
@@ -155,7 +155,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.inner_diameter.Margin = new System.Windows.Forms.Padding(4);
             this.inner_diameter.Name = "inner_diameter";
             this.inner_diameter.Size = new System.Drawing.Size(147, 33);
-            this.inner_diameter.TabIndex = 8;
+            this.inner_diameter.TabIndex = 0;
             this.inner_diameter.Tag = "";
             // 
             // outer_diameter
@@ -164,7 +164,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.outer_diameter.Margin = new System.Windows.Forms.Padding(4);
             this.outer_diameter.Name = "outer_diameter";
             this.outer_diameter.Size = new System.Drawing.Size(147, 33);
-            this.outer_diameter.TabIndex = 8;
+            this.outer_diameter.TabIndex = 1;
             // 
             // constxt
             // 
@@ -172,7 +172,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.constxt.Margin = new System.Windows.Forms.Padding(4);
             this.constxt.Name = "constxt";
             this.constxt.Size = new System.Drawing.Size(147, 33);
-            this.constxt.TabIndex = 8;
+            this.constxt.TabIndex = 2;
             // 
             // Form1
             // 

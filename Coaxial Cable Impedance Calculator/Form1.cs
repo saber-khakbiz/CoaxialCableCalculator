@@ -44,5 +44,6 @@ namespace Coaxial_Cable_Impedance_Calculator
                 MessageBox.Show("برگام، چرا حرف وارد کردی بجای عدد؟ زود درستش کن");
             }
         }
+
     }
 }
