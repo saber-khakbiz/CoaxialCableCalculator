@@ -140,12 +140,13 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.calculate.BackColor = System.Drawing.Color.Tomato;
             this.calculate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.calculate.Font = new System.Drawing.Font("B Sina", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.calculate.ForeColor = System.Drawing.SystemColors.ControlText;
             this.calculate.Location = new System.Drawing.Point(447, 369);
             this.calculate.Margin = new System.Windows.Forms.Padding(4);
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(137, 77);
             this.calculate.TabIndex = 3;
-            this.calculate.Text = "محاسبه کن  :)";
+            this.calculate.Text = "محاسبه کن  :(";
             this.calculate.UseVisualStyleBackColor = false;
             this.calculate.Click += new System.EventHandler(this.calculate_Click);
             // 
@@ -157,6 +158,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.inner_diameter.Size = new System.Drawing.Size(147, 33);
             this.inner_diameter.TabIndex = 0;
             this.inner_diameter.Tag = "";
+            this.inner_diameter.TextChanged += new System.EventHandler(this.inner_diameter_TextChanged);
             // 
             // outer_diameter
             // 
@@ -165,6 +167,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.outer_diameter.Name = "outer_diameter";
             this.outer_diameter.Size = new System.Drawing.Size(147, 33);
             this.outer_diameter.TabIndex = 1;
+            this.outer_diameter.TextChanged += new System.EventHandler(this.inner_diameter_TextChanged);
             // 
             // constxt
             // 
@@ -173,6 +176,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.constxt.Name = "constxt";
             this.constxt.Size = new System.Drawing.Size(147, 33);
             this.constxt.TabIndex = 2;
+            this.constxt.TextChanged += new System.EventHandler(this.inner_diameter_TextChanged);
             // 
             // Form1
             // 
@@ -201,6 +205,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ماشین حساب مشخصات کابل کواکسیال  ";
             this.TransparencyKey = System.Drawing.Color.SeaShell;
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.coxialpic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Coaxial_Cable_Impedance_Calculator
 {
     public partial class Form1 : Form
-    {
+    {   
+        
         ICalculate cal;
+        
         public Form1()
         {
             InitializeComponent();
@@ -14,6 +17,7 @@ namespace Coaxial_Cable_Impedance_Calculator
 
         private void calculate_Click(object sender, EventArgs e)
         {
+
             try
             {
                 double id = Convert.ToDouble(inner_diameter.Text);
@@ -26,13 +30,13 @@ namespace Coaxial_Cable_Impedance_Calculator
                 {
                     MessageBox.Show("!جوون دل، ممکن نیست قطر درونی بزرگتر یا مساوی قطر بیرونی باشه");
                 }
-                else if (id <=0 || od<=0)
+                else if (id <= 0 || od <= 0)
                 {
                     MessageBox.Show("!!!از موتوری جنس نگیرید، قطر کابل منفی نمیشه");
                 }
-                else 
+                else
                 {
-                    MessageBox.Show(" :اینم مقادیری که می خواستی جوون دل" + "\n\n"+
+                    MessageBox.Show(" :اینم مقادیری که می خواستی جوون دل" + "\n\n" +
                                      "Zo: " + result[0] + " Ω" + "\n\n" +
                                      "C: " + result[1] + " pF" + "\n\n" +
                                      "L: " + result[2] + " nH" + "\n\n" +
@@ -45,5 +49,28 @@ namespace Coaxial_Cable_Impedance_Calculator
             }
         }
 
+
+        private void inner_diameter_TextChanged(object sender, EventArgs e)
+        {
+            if (inner_diameter.Text == "" || outer_diameter.Text=="" || constxt.Text == "")
+            {
+                calculate.Enabled = false;
+                calculate.BackColor = Color.Tomato;
+                calculate.Text = "محاسبه کن :(";
+               
+            }
+            else
+            {
+                calculate.Enabled = true;
+                calculate.BackColor = Color.Green;
+                calculate.Text = "محاسبه کن :)";
+                
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            inner_diameter_TextChanged(null, null);
+        }
     }
 }
