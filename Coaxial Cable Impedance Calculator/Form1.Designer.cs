@@ -40,14 +40,18 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.inner_diameter = new System.Windows.Forms.TextBox();
             this.outer_diameter = new System.Windows.Forms.TextBox();
             this.constxt = new System.Windows.Forms.TextBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.coxialpic)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // coxialpic
             // 
             this.coxialpic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.coxialpic.Image = ((System.Drawing.Image)(resources.GetObject("coxialpic.Image")));
-            this.coxialpic.Location = new System.Drawing.Point(385, 41);
+            this.coxialpic.Location = new System.Drawing.Point(385, 97);
             this.coxialpic.Margin = new System.Windows.Forms.Padding(4);
             this.coxialpic.Name = "coxialpic";
             this.coxialpic.Size = new System.Drawing.Size(243, 254);
@@ -60,7 +64,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("B Mehr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(130, 47);
+            this.label1.Location = new System.Drawing.Point(137, 97);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 31);
@@ -71,7 +75,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("B Mehr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(119, 158);
+            this.label2.Location = new System.Drawing.Point(126, 208);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(226, 31);
@@ -92,7 +96,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             "میلیمتر",
             "یارد",
             "متر"});
-            this.unit_od.Location = new System.Drawing.Point(13, 193);
+            this.unit_od.Location = new System.Drawing.Point(20, 243);
             this.unit_od.Margin = new System.Windows.Forms.Padding(4);
             this.unit_od.Name = "unit_od";
             this.unit_od.Size = new System.Drawing.Size(132, 39);
@@ -112,7 +116,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             "میلیمتر",
             "یارد",
             "متر"});
-            this.unit_id.Location = new System.Drawing.Point(13, 82);
+            this.unit_id.Location = new System.Drawing.Point(20, 132);
             this.unit_id.Margin = new System.Windows.Forms.Padding(4);
             this.unit_id.Name = "unit_id";
             this.unit_id.Size = new System.Drawing.Size(132, 39);
@@ -128,7 +132,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.kind_cont.Items.AddRange(new object[] {
             "ثابت دی الکتریک",
             "سرعت انتشار %"});
-            this.kind_cont.Location = new System.Drawing.Point(13, 299);
+            this.kind_cont.Location = new System.Drawing.Point(20, 349);
             this.kind_cont.Margin = new System.Windows.Forms.Padding(4);
             this.kind_cont.Name = "kind_cont";
             this.kind_cont.Size = new System.Drawing.Size(132, 28);
@@ -141,7 +145,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.calculate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.calculate.Font = new System.Drawing.Font("B Sina", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.calculate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.calculate.Location = new System.Drawing.Point(447, 369);
+            this.calculate.Location = new System.Drawing.Point(419, 389);
             this.calculate.Margin = new System.Windows.Forms.Padding(4);
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(137, 77);
@@ -152,7 +156,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             // 
             // inner_diameter
             // 
-            this.inner_diameter.Location = new System.Drawing.Point(192, 86);
+            this.inner_diameter.Location = new System.Drawing.Point(199, 136);
             this.inner_diameter.Margin = new System.Windows.Forms.Padding(4);
             this.inner_diameter.Name = "inner_diameter";
             this.inner_diameter.Size = new System.Drawing.Size(147, 33);
@@ -162,7 +166,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             // 
             // outer_diameter
             // 
-            this.outer_diameter.Location = new System.Drawing.Point(192, 197);
+            this.outer_diameter.Location = new System.Drawing.Point(199, 247);
             this.outer_diameter.Margin = new System.Windows.Forms.Padding(4);
             this.outer_diameter.Name = "outer_diameter";
             this.outer_diameter.Size = new System.Drawing.Size(147, 33);
@@ -171,12 +175,41 @@ namespace Coaxial_Cable_Impedance_Calculator
             // 
             // constxt
             // 
-            this.constxt.Location = new System.Drawing.Point(192, 297);
+            this.constxt.Location = new System.Drawing.Point(199, 347);
             this.constxt.Margin = new System.Windows.Forms.Padding(4);
             this.constxt.Name = "constxt";
             this.constxt.Size = new System.Drawing.Size(147, 33);
             this.constxt.TabIndex = 2;
             this.constxt.TextChanged += new System.EventHandler(this.inner_diameter_TextChanged);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripSeparator1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(665, 31);
+            this.toolStrip1.TabIndex = 8;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Font = new System.Drawing.Font("B Mitra", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(94, 28);
+            this.toolStripButton1.Text = "درباره نرم‌افزار";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripSeparator1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // Form1
             // 
@@ -184,6 +217,7 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(665, 496);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.constxt);
             this.Controls.Add(this.outer_diameter);
             this.Controls.Add(this.inner_diameter);
@@ -207,6 +241,8 @@ namespace Coaxial_Cable_Impedance_Calculator
             this.TransparencyKey = System.Drawing.Color.SeaShell;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.coxialpic)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +260,9 @@ namespace Coaxial_Cable_Impedance_Calculator
         private System.Windows.Forms.TextBox inner_diameter;
         private System.Windows.Forms.TextBox outer_diameter;
         private System.Windows.Forms.TextBox constxt;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

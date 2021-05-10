@@ -72,5 +72,15 @@ namespace Coaxial_Cable_Impedance_Calculator
         {
             inner_diameter_TextChanged(null, null);
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            string message = "...این نرم افزار در حال توسعه می‌باشد"+
+                "\n\n\nمهندس صابر خاک بیز ";
+
+
+            string titel = "درباره سازندگان";
+            MessageBox.Show( message,titel, MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+        }
     }
 }
